@@ -1,0 +1,22 @@
+{
+  "name": "airport-shuttle-tracking",
+  "version": "1.0.0",
+  "description": "Track Your Trips - Airport Shuttle Tracking System",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd trackyourtrips && npm start",
+    "server-dev": "cd server && nodemon server.js",
+    "install-all": "npm install && cd server && npm install && cd ../trackyourtrips && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "html5-qrcode": "^2.3.8",
+    "react-qr-scanner": "^1.0.0-alpha.11",
+    "socket.io-client": "^4.8.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
